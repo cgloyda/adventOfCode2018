@@ -56,9 +56,14 @@ public class Day1 {
 				+ "-4";
 		
 		// exercise solution given test input
+		long startTime = System.currentTimeMillis();
 		int soln = solution(input);
-
+		long endTime   = System.currentTimeMillis();
+		
+		// print solution and runtime
+		long totalTime = endTime - startTime;
 		System.out.println("Solution Output: " + soln);
+		System.out.println("Solution Runtime: " + totalTime + " ms");
 	}
 
 }

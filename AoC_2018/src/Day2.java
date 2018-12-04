@@ -127,9 +127,15 @@ public class Day2 {
 		String input = "<insert puzzle input here>";
 		
 		// exercise solution given test input
+		long startTime = System.currentTimeMillis();
+		// int soln = solution1(input);
 		String soln = solution2(input);
-
+		long endTime   = System.currentTimeMillis();
+		
+		// print solution and runtime
+		long totalTime = endTime - startTime;
 		System.out.println("Solution Output: " + soln);
+		System.out.println("Solution Runtime: " + totalTime + " ms");
 	}
 
 }
